@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialChat UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <div class="user-avatar"></div>
+            <h3>Messages</h3>
+        </header>
+        <div class="search-box">
+            <input type="text" placeholder="Search chats...">
+        </div>
+        <div class="chat-list">
+            <div class="chat-item active">
+                <div class="avatar"></div>
+                <div class="chat-info">
+                    <h4>Alex Rivera</h4>
+                    <p>That looks amazing!</p>
+                </div>
+                <span class="time">10:45 AM</span>
+            </div>
+            <div class="chat-item">
+                <div class="avatar gray"></div>
+                <div class="chat-info">
+                    <h4>Sarah Chen</h4>
+                    <p>See you at the office later.</p>
+                </div>
+                <span class="time">Yesterday</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="chat-window">
+        <header class="chat-header">
+            <div class="chat-title">
+                <div class="avatar"></div>
+                <div>
+                    <h4>Alex Rivera</h4>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="header-actions">⋮</div>
+        </header>
+
+        <div class="message-area">
+            <div class="message incoming">
+                <p>Hey! Have you seen the new UI designs?</p>
+                <span class="msg-time">10:42 AM</span>
+            </div>
+            <div class="message outgoing">
+                <p>Just checked them out. The dark mode looks sick! 🔥</p>
+                <span class="msg-time">10:44 AM</span>
+            </div>
+            <div class="message incoming">
+                <p>That looks amazing! We should implement it.</p>
+                <span class="msg-time">10:45 AM</span>
+            </div>
+        </div>
+
+        <footer class="input-area">
+            <button class="attach-btn">+</button>
+            <input type="text" placeholder="Type a message...">
+            <button class="send-btn">Send</button>
+        </footer>
+    </main>
+</div>
+
+</body>
+</html>
